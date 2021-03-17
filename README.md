@@ -30,7 +30,7 @@ pip3 install -r requirements.txt
 
 Alternatively you can use [pipenv]:
 ```
-pip install pipenv
+pip3 install pipenv
 pipenv run python main.py
 ```
 
@@ -47,6 +47,11 @@ Then, run `python3 main.py`.
 At first run, you will be asked to setup Trakt and Plex access.
 Follow the instructions, your credentials and API keys will be stored in
 `.env` and `.pytrakt.json` files.
+
+If you have [2 Factor Authentication enabled on Plex][2fa], you can append the code to your password.
+
+[2fa]: https://support.plex.tv/articles/two-factor-authentication/#toc-1:~:text=Old%20Third%2DParty%20Apps%20%26%20Tools
+
 You can take a look at the progress in the `last_update.log` file which will
 be created. 
 
